@@ -2,11 +2,12 @@
 
 **A professional Python engineering project demonstrating codebase refactoring, performance optimization, and complex debugging -- a flawed legacy data pipeline modernized into a concurrent, exact system with measured 10.3x speedup.**
 
+[![License](https://img.shields.io/github/license/yazanus94-dot/Legacy-Pipeline-Refactoring-Engine?color=yellow)](LICENSE)
+[![Built with OpenCode](https://img.shields.io/badge/Built%20with-OpenCode-6E40C9?logo=opencode&logoColor=white)](https://opencode.ai)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Docker](https://img.shields.io/badge/Docker-Supported-blue)
 ![Testing](https://img.shields.io/badge/Tests-Pytest%20%2B%20Hypothesis-green)
 ![Coverage](https://img.shields.io/badge/Coverage-95%25-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 1. Project Overview
 
