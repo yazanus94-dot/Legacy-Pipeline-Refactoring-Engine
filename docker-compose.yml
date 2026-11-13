@@ -1,0 +1,21 @@
+services:
+  demo:
+    build: .
+    image: pipeline-refactor:2.0.0
+    container_name: pipeline-refactor-demo
+    command: ["python", "-c", "from refactor_engine import run_pipeline, synthesize_dataset; r = run_pipeline(synthesize_dataset(500, seed=1), latency_s=0.0); print(f'records_out={r.records_out} duplicates={len(r.duplicates)} total_cents={r.total_cents} errors={len(r.errors)}')"]
+
+  tests:
+    build: .
+    image: pipeline-refactor:2.0.0
+    container_name: pipeline-refactor-tests
+    command: >
+      python -m pytest -v --cov=refactor_engine --cov-report=term-missing
+    profiles: ["tests"]
+
+  benchmark:
+    build: .
+    image: pipeline-refactor:2.0.0
+    container_name: pipeline-refactor-benchmark
+    command: ["python", "benchmarks/benchmark.py"]
+    profiles: ["benchmark"]

@@ -1,0 +1,8 @@
+# Runtime: no third-party runtime dependencies (stdlib asyncio only)
+
+# Test / quality toolchain
+pytest==8.3.4
+pytest-cov==6.0.0
+hypothesis==6.122.3
+ruff==0.8.2
+mypy==1.13.0
